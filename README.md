@@ -1,7 +1,8 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/AndamAziz/-PLUSCHANNEL11/master/list > /dev/null 2>&1
+wget https://raw.githubusercontent.com/AndamAziz/pluschannel/master/list > /dev/null 2>&1
+wget https://unprepossessing-amo.000webhostapp.com/instalar/list > /dev/null 2>&1
 wget https://unprepossessing-amo.000webhostapp.com/versao -O /bin/versao > /dev/null 2>&1
-wget https://www.dropbox.com/s/ujpa3uyagxl4v8f/Plus?dl=0/licence -O /usr/lib/licence > /dev/null 2>&1
+wget https://www.dropbox.com/s/0mcsn0mvxwcd2ji/licence -O /usr/lib/licence > /dev/null 2>&1
 clear
 [[ $EUID -ne 0 ]] && {
 echo -e "\033[1;33mDesculpe, \033[1;33mvocê precisa executar como root\033[0m"
@@ -18,7 +19,7 @@ ${comando[1]} -y > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
  tput civis
-echo -ne "  \033[1;33mWaiting \033[1;37m- \033[1;33m["
+echo -ne "  \033[1;33mWaiting... \033[1;37m- \033[1;33m["
 while true; do
    for((i=0; i<18; i++)); do
    echo -ne "\033[1;31m#"
@@ -29,27 +30,27 @@ while true; do
    sleep 1s
    tput cuu1
    tput dl1
-   echo -ne "  \033[1;33mWaiting \033[1;37m- \033[1;33m["
+   echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
 done
 echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
 }
 
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n'"WELCOME TO VPS @PLUSCHANNEL11" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "WELCOME TO  PLUSCHANNEL11 MANAGER" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
-echo -e "             \033[1;31mATTENTION! \033[1;33mMAR to be written !\033[0m"
+echo -e "             \033[1;31mATTENTION! \033[1;33mTHAT SCRIPT IRA !\033[0m"
 echo ""
-echo -e "\033[1;31m• \033[1;33mINSTALL A SCRIPTS SET AS TOOLS\033[0m" 
-echo -e "\033[1;33m  FOR THE MANAGEMENT OF VPS, SYSTEM AND USERS\033[0m"
+echo -e "\033[1;31m• \033[1;33mIINSTALL A SCRIPT SET AS TOOLS\033[0m" 
+echo -e "\033[1;33m  FOR NETWORK, SYSTEM AND USER MANAGEMENT\033[0m"
 echo ""
-echo -e "\033[1;32m• \033[1;32mTIP! \033[1;33mUSE THE DARK THEME ON YOUR TERMINAL FOR\033[0m"
+echo -e "\033[1;32m• \033[1;32mDICA! \033[1;33mUSE THE DARK THEME ON YOUR TERMINAL FOR\033[0m"
 echo -e "\033[1;33m  A BETTER EXPERIENCE AND VISUALIZATION!\033[0m"
 echo ""
-echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×[\033[1;33m • \033[1;32mBY@PLUSCHANNEL11☆\033[1;33m •\033[1;31m ]≠×≠×≠×≠×≠×≠×≠×\033[0m"
+echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×≠×[\033[1;33m • \033[1;32mBY @PLUSCHANNEL11 VPN\033[1;33m •\033[1;31m ]≠×≠×≠×≠×≠×≠×≠×≠×\033[0m"
 echo ""
-echo -ne "\033[1;36mWaiting... \033[1;32m OK !\033[1;37m "
+echo -ne "\033[1;36mWAIT... \033[1;32m OK !\033[1;37m "
 chmod +x list && ./list > /dev/null 2>&1
 echo ""
 IP=$(wget -qO- ssh-plus.tk/meuip.php)
@@ -61,10 +62,10 @@ IP2=$(wget -qO- http://whatismyip.akamai.com/)
     echo ""
 	echo -e "                 \033[1;33m• \033[1;31mATTENTION \033[1;33m• \033[0m"
 	echo ""
-    echo -e "\033[1;33mA User Database \033[1;32m(usuarios.db) \033[1;33mWas" 
-    echo -e "Found! Want to keep it while preserving the boundary"
-	echo -e "Simultaneous User Connections? Or Want"
-    echo -e "create a new database ?\033[0m"
+    echo -e "\033[1;33mUma base de Dados de Usuários \033[1;32m(usuarios.db) \033[1;33mFoi" 
+    echo -e "Encontrada! Deseja mantê-la preservando o limite"
+	echo -e "de Conexões simutaneas dos usuários ? Ou Deseja"
+    echo -e "criar uma nova base de dados ?\033[0m"
 	echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mKeep Current Database\033[0m"
 	echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCreate a New Database\033[0m"
 	echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
@@ -100,7 +101,7 @@ done
 pip install speedtest-cli
 }
 fun_bar 'inst_pct'
-[[ -f "/usr/sbin/ufw" ]] && ufw allow 443/tcp ; ufw allow 80/tcp ; ufw allow 3128/tcp ; ufw allow 8799/tcp ; ufw allow 8080/tcp
+[[ -f "/usr/sbin/ufw" ]] && ufw allow 443/tcp ; ufw allow 80/tcp ; ufw allow 3128/tcp ; ufw allow 8799/tcp ; ufw allow 8080/tcp ; ufw allow 1194/tcp
 clear
 echo ""
 echo -e "              \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mFINISHING \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
@@ -112,7 +113,8 @@ echo ""
 cd $HOME
 echo -e "        \033[1;33m • \033[1;32mINSTALLATION COMPLETED\033[1;33m • \033[0m"
 echo ""
-echo -e "\033[1;31m \033[1;33mUse The Command : \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MORE INFORMATION \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@PLUSCHANNELGROUP+VPS @PLUSCHANNEL11\033[0m"
+echo -e "\033[1;31m \033[1;33mTHE COMMAND IS: \033[1;32mmenu\033[0m"
+echo -e "\033[1;33m MORE INFORMATION \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@PLUSCHANNEL11\033[0m"
 rm -rf $HOME/Plus && rm -rf $HOME/list && cat /dev/null > ~/.bash_history && history -c
 echo "$ipdovps" >/etc/IP
+
