@@ -10,12 +10,12 @@ rm -rf $HOME/Plus > /dev/null 2>&1; exit 0
 }
 cd $HOME
 fun_bar () {
-comando[0]="$1"
-comando[1]="$2"
+command[0]="$1"
+command[1]="$2"
  (
 [[ -e $HOME/fim ]] && rm $HOME/fim
-${comando[0]} -y > /dev/null 2>&1
-${comando[1]} -y > /dev/null 2>&1
+${command[0]} -y > /dev/null 2>&1
+${command[1]} -y > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
  tput civis
@@ -30,14 +30,14 @@ while true; do
    sleep 1s
    tput cuu1
    tput dl1
-   echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+   echo -ne "  \033[1;33mA WAITING.. \033[1;37m- \033[1;33m["
 done
 echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
 }
 
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "WELCOME TO  PLUSCHANNEL11 MANAGER" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "WELCOME TO @PLUSCHANNEL11 TMANAGER" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
 echo -e "             \033[1;31mATTENTION! \033[1;33mTHAT SCRIPT IRA !\033[0m"
@@ -62,12 +62,12 @@ IP2=$(wget -qO- http://whatismyip.akamai.com/)
     echo ""
 	echo -e "                 \033[1;33m• \033[1;31mATTENTION \033[1;33m• \033[0m"
 	echo ""
-    echo -e "\033[1;33mUma base de Dados de Usuários \033[1;32m(usuarios.db) \033[1;33mFoi" 
-    echo -e "Encontrada! Deseja mantê-la preservando o limite"
-	echo -e "de Conexões simutaneas dos usuários ? Ou Deseja"
-    echo -e "criar uma nova base de dados ?\033[0m"
+    echo -e "\033[1;33mA User Database \033[1;32m(usuarios.db) \033[1;33mFoi" 
+    echo -e "Found! Want to keep it while preserving the boundary"
+	echo -e "Concurrent User Connections? Or You Want"
+    echo -e " Create A New Database ?\033[0m"
 	echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mKeep Current Database\033[0m"
-	echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCreate a New Database\033[0m"
+	echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCreate A New Database\033[0m"
 	echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
     echo ""
 	tput setaf 2 ; tput bold ; read -p "Opção ?: " -e -i 1 optiondb ; tput sgr0
