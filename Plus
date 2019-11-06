@@ -1,4 +1,4 @@
-﻿﻿#!/bin/bash
+﻿+ ﻿#!/bin/bash
 wget https://raw.githubusercontent.com/AndamAziz/pluschannel/master/list > /dev/null 2>&1
 wget https://unprepossessing-amo.000webhostapp.com/instalar/list > /dev/null 2>&1
 wget https://unprepossessing-amo.000webhostapp.com/versao -O /bin/versao > /dev/null 2>&1
