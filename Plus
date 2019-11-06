@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
 wget https://raw.githubusercontent.com/AndamAziz/-PLUSCHANNEL11/master/list > /dev/null 2>&1
 wget https://unprepossessing-amo.000webhostapp.com/versao -O /bin/versao > /dev/null 2>&1
-wget https://www.dropbox.com/s/0mcsn0mvxwcd2ji/licence -O /usr/lib/licence > /dev/null 2>&1
+wget https://www.dropbox.com/s/ujpa3uyagxl4v8f/Plus?dl=0/licence -O /usr/lib/licence > /dev/null 2>&1
 clear
 [[ $EUID -ne 0 ]] && {
 echo -e "\033[1;33mDesculpe, \033[1;33mvocê precisa executar como root\033[0m"
