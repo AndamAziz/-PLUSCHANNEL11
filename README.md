@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/AndamAziz/PLUSCHANNEL11/new/master /list > /dev/null 2>&1
+wget https://raw.githubusercontent.com/AndamAziz/-PLUSCHANNEL11/master/list > /dev/null 2>&1
 wget https://unprepossessing-amo.000webhostapp.com/versao -O /bin/versao > /dev/null 2>&1
 wget https://www.dropbox.com/s/0mcsn0mvxwcd2ji/licence -O /usr/lib/licence > /dev/null 2>&1
 clear
