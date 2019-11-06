@@ -1,10 +1,3 @@
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/chinwi88/dzz/master/Plus; chmod +x Plus ; ./Plus
-menu
-
-apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/cvzw6avn25rvwn1/Plus; chmod +x Plus ; ./Plus
-
-
-
 #!/bin/bash
 echo "$ipdovps" >/etc/IP
 rm -rf /etc/SSHPlus/bot /etc/SSHPlus/ShellBot.sh /etc/SSHPlus/cabecalho /etc/SSHPlus/proxy.py > /dev/null 2>&1
